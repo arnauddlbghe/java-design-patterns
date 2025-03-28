@@ -6,7 +6,7 @@ public class Demo {
     public static void main(String[] args) {
         System.out.println("Starting demo of Builder solution");
 
-        // On est maintenant capable de construire nos maisons, quelque soit les paramètres.
+        // We can now customize our House.
         House builtHouse = House.builder()
                 .withDoors(3)
                 .withRooms(5)
@@ -14,10 +14,10 @@ public class Demo {
                 .withWindows(7)
                 .build();
 
-        // On peut produire des maisons vides.
+        // We cal build some empty
         House builtHouse2 = House.builder().build();
 
-        // Ou des maisons qui ont plusieurs attributs.
+        // Or some with garden and statues.
         House customHouse = House.builder()
                 .withGarden()
                 .withFancyStatues()
@@ -27,11 +27,11 @@ public class Demo {
         System.out.println(builtHouse2);
         System.out.println(customHouse);
 
-        // Malheureusement, on ne profite pas du polymorphisme ou de divers comportement lié à nos maisons.
-        // On ne profite pas non plus de la restriction sur les paramètres requis.
-        // Ici on garantit uniquement qu'en cas d'évolution de notre maison nous n'aurons pas besoin de mettre à jour nos précédents constructeurs.
+        // But we can't make benefit of polymorphism.
+        // And yet, we can not define required arguments. Since for example we have an empty House.
+        // We only protect our codebase from evolving with new attributes without causing compilation error.
 
-        // In a first time, let's implemente a new solution for requiredArgs.
+        // Let's take a look to our problem with required arguments. Lets make a new implementation which allow us to give required arguments
         House houseBuiltWithRequiredArgs = House.builderWithRequiredArgs(3, 4, 7)
                 .withSwimmingPool()
                 .build();
@@ -40,6 +40,7 @@ public class Demo {
 
         // Here, we have an implementation where our House can not have null value (int) and forces us to give values.
         // But we can not make profit of Polymorphism.
+        // Sadly, Builder is not a design pattern to use for Polymorphism, or it need to make custom builder for each child, which will cause to have a lot of classes.
 
     }
 }
