@@ -1,6 +1,8 @@
 package com.delberghea.creational.builder.solution.model;
 
+import com.delberghea.creational.builder.solution.builder.HouseBuilder;
 import com.delberghea.creational.builder.solution.builder.HouseBuilderImpl;
+import com.delberghea.creational.builder.solution.builder.HouseBuilderRequiredArgsImpl;
 
 public class House {
 
@@ -12,8 +14,12 @@ public class House {
     private boolean hasFancyStatues;
     private boolean hasGarden;
 
-    public static HouseBuilderImpl builder() {
+    public static HouseBuilder builder() {
         return new HouseBuilderImpl();
+    }
+
+    public static HouseBuilder builderWithRequiredArgs(int windows, int doors, int rooms) {
+        return new HouseBuilderRequiredArgsImpl(windows, doors, rooms);
     }
 
     public int getWindows() {
