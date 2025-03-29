@@ -15,4 +15,5 @@ public class SquarePeg {
     public void setWidth(int width) {
         this.width = width;
     }
+
 }
