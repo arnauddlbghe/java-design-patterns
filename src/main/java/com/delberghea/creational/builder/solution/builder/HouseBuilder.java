@@ -4,12 +4,12 @@ import com.delberghea.creational.builder.solution.model.House;
 
 public interface HouseBuilder {
 
-    HouseBuilderImpl withWindows(int windows);
-    HouseBuilderImpl withDoors(int doors);
-    HouseBuilderImpl withRooms(int rooms);
-    HouseBuilderImpl withGarage();
-    HouseBuilderImpl withSwimmingPool();
-    HouseBuilderImpl withFancyStatues();
-    HouseBuilderImpl withGarden();
+    HouseBuilder withWindows(int windows);
+    HouseBuilder withDoors(int doors);
+    HouseBuilder withRooms(int rooms);
+    HouseBuilder withGarage();
+    HouseBuilder withSwimmingPool();
+    HouseBuilder withFancyStatues();
+    HouseBuilder withGarden();
     House build();
 }
