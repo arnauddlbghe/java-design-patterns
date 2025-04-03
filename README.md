@@ -50,12 +50,12 @@ Voici la liste des design patterns réalisés dans ce projet. Chaque pattern est
 ## Technologies utilisées
 
 - **Java** : Langage principal utilisé pour l'implémentation des patterns.
-- **JUnit** : Pour les tests unitaires de chaque implémentation de pattern.
 - **Maven** : Pour la gestion des dépendances et la construction du projet.
 
 ## Instructions
 
 1. Clone le projet :
 
-   ```bash
-   git clone https://github.com/ton-username/ton-repository.git
+```bash
+git clone https://github.com/arnauddlbghe/java-design-patterns.git
+```
