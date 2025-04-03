@@ -45,7 +45,7 @@ Voici la liste des design patterns réalisés dans ce projet. Chaque pattern est
 - [ ] **State**  
 - [ ] **Strategy**  
 - [ ] **Template Method**  
-- [ ] **Visitor**  
+- [X] **Visitor**  
 
 ## Technologies utilisées
 
