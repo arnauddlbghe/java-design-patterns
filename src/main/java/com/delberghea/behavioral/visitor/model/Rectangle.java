@@ -1,6 +1,9 @@
 package com.delberghea.behavioral.visitor.model;
 
-public class Rectangle {
+import com.delberghea.behavioral.visitor.Visitor;
+import com.delberghea.behavioral.visitor.VisitorElement;
+
+public class Rectangle implements VisitorElement {
     private double largeur;
     private double longueur;
 
@@ -21,4 +24,8 @@ public class Rectangle {
         return largeur * longueur;
     }
 
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 }

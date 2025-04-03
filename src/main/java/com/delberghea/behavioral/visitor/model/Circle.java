@@ -1,6 +1,9 @@
 package com.delberghea.behavioral.visitor.model;
 
-public class Circle {
+import com.delberghea.behavioral.visitor.Visitor;
+import com.delberghea.behavioral.visitor.VisitorElement;
+
+public class Circle implements VisitorElement {
     private double rayon;
 
     public Circle(double rayon) {
@@ -16,4 +19,8 @@ public class Circle {
         return rayon * rayon * Math.PI;
     }
 
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 }

@@ -1,5 +1,5 @@
 package com.delberghea.behavioral.visitor;
 
-interface VisitorAction {
+public interface VisitorElement {
     void accept(Visitor visitor);
 }
