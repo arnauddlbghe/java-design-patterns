@@ -31,7 +31,7 @@ Voici la liste des design patterns réalisés dans ce projet. Chaque pattern est
 - [ ] **Composite**  
 - [ ] **Decorator**  
 - [ ] **Facade**  
-- [ ] **Flyweight**  
+- [X] **Flyweight**  
 - [ ] **Proxy**  
 
 ### Comportement
