@@ -20,7 +20,7 @@ Voici la liste des design patterns réalisés dans ce projet. Chaque pattern est
 
 ### Création
 - [ ] **Singleton**  
-- [ ] **Factory Method**  
+- [X] **Factory Method**  
 - [ ] **Abstract Factory**  
 - [X] **Builder**  
 - [ ] **Prototype**  
